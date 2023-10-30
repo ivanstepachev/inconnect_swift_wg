@@ -1,0 +1,1670 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		08A5FBABC2F576EEFA1164E9 /* Pods_WireguardNetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4C70E751747320AF90A8DD5 /* Pods_WireguardNetworkExtension.framework */; };
+		4B2A078F2A0E1BF3007C24C8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2A078E2A0E1BF3007C24C8 /* AppDelegate.swift */; };
+		4B2A07912A0E1BF3007C24C8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2A07902A0E1BF3007C24C8 /* SceneDelegate.swift */; };
+		4B2A07962A0E1BF3007C24C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B2A07942A0E1BF3007C24C8 /* Main.storyboard */; };
+		4B2A07982A0E1BF4007C24C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B2A07972A0E1BF4007C24C8 /* Assets.xcassets */; };
+		4B2A079B2A0E1BF4007C24C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B2A07992A0E1BF4007C24C8 /* LaunchScreen.storyboard */; };
+		4B2A07AA2A0E1E2B007C24C8 /* TunnelImporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2A07A62A0E1E2B007C24C8 /* TunnelImporter.swift */; };
+		4B2A07AB2A0E1E2B007C24C8 /* TunnelViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2A07A72A0E1E2B007C24C8 /* TunnelViewModel.swift */; };
+		4B2A07AC2A0E1E2B007C24C8 /* libwg-go.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B2A07A82A0E1E2B007C24C8 /* libwg-go.a */; };
+		4B2A07AD2A0E1E2B007C24C8 /* RecentTunnelsTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2A07A92A0E1E2B007C24C8 /* RecentTunnelsTracker.swift */; };
+		4B2A07B42A0E1E42007C24C8 /* Developer.xcconfig.template in Resources */ = {isa = PBXBuildFile; fileRef = 4B2A07B02A0E1E42007C24C8 /* Developer.xcconfig.template */; };
+		4B2A07C42A0E1E52007C24C8 /* NotificationToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2A07B82A0E1E52007C24C8 /* NotificationToken.swift */; };
+		4B2A07C52A0E1E52007C24C8 /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2A07B92A0E1E52007C24C8 /* Keychain.swift */; };
+		4B2A07C62A0E1E52007C24C8 /* ringlogger.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B2A07BB2A0E1E52007C24C8 /* ringlogger.c */; };
+		4B2A07C72A0E1E52007C24C8 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2A07BC2A0E1E52007C24C8 /* Logger.swift */; };
+		4B2A07C82A0E1E52007C24C8 /* test_ringlogger.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B2A07BD2A0E1E52007C24C8 /* test_ringlogger.c */; };
+		4B2A07C92A0E1E52007C24C8 /* FileManager+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2A07BF2A0E1E52007C24C8 /* FileManager+Extension.swift */; };
+		4B2A07CA2A0E1E52007C24C8 /* TunnelConfiguration+WgQuickConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2A07C12A0E1E52007C24C8 /* TunnelConfiguration+WgQuickConfig.swift */; };
+		4B2A07CB2A0E1E52007C24C8 /* NETunnelProviderProtocol+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2A07C22A0E1E52007C24C8 /* NETunnelProviderProtocol+Extension.swift */; };
+		4B2A07CC2A0E1E52007C24C8 /* String+ArrayConversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2A07C32A0E1E52007C24C8 /* String+ArrayConversion.swift */; };
+		4B2A07D62A0E1E63007C24C8 /* ActivateOnDemandOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2A07CE2A0E1E63007C24C8 /* ActivateOnDemandOption.swift */; };
+		4B2A07D72A0E1E63007C24C8 /* TunnelStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2A07CF2A0E1E63007C24C8 /* TunnelStatus.swift */; };
+		4B2A07D82A0E1E63007C24C8 /* WireGuardResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2A07D02A0E1E63007C24C8 /* WireGuardResult.swift */; };
+		4B2A07D92A0E1E63007C24C8 /* TunnelConfiguration+UapiConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2A07D12A0E1E63007C24C8 /* TunnelConfiguration+UapiConfig.swift */; };
+		4B2A07DA2A0E1E63007C24C8 /* TunnelsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2A07D22A0E1E63007C24C8 /* TunnelsManager.swift */; };
+		4B2A07DB2A0E1E63007C24C8 /* TunnelErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2A07D32A0E1E63007C24C8 /* TunnelErrors.swift */; };
+		4B2A07DC2A0E1E63007C24C8 /* MockTunnels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2A07D42A0E1E63007C24C8 /* MockTunnels.swift */; };
+		4B2A07DD2A0E1E63007C24C8 /* WireGuardAppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2A07D52A0E1E63007C24C8 /* WireGuardAppError.swift */; };
+		4B2A07EB2A0E1E72007C24C8 /* IPAddress+AddrInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2A07DF2A0E1E72007C24C8 /* IPAddress+AddrInfo.swift */; };
+		4B2A07EC2A0E1E72007C24C8 /* PacketTunnelSettingsGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2A07E02A0E1E72007C24C8 /* PacketTunnelSettingsGenerator.swift */; };
+		4B2A07ED2A0E1E72007C24C8 /* PrivateKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2A07E12A0E1E72007C24C8 /* PrivateKey.swift */; };
+		4B2A07EE2A0E1E72007C24C8 /* DNSServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2A07E22A0E1E72007C24C8 /* DNSServer.swift */; };
+		4B2A07EF2A0E1E72007C24C8 /* InterfaceConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2A07E32A0E1E72007C24C8 /* InterfaceConfiguration.swift */; };
+		4B2A07F02A0E1E72007C24C8 /* IPAddressRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2A07E42A0E1E72007C24C8 /* IPAddressRange.swift */; };
+		4B2A07F12A0E1E72007C24C8 /* DNSResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2A07E52A0E1E72007C24C8 /* DNSResolver.swift */; };
+		4B2A07F22A0E1E72007C24C8 /* PeerConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2A07E62A0E1E72007C24C8 /* PeerConfiguration.swift */; };
+		4B2A07F32A0E1E72007C24C8 /* TunnelConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2A07E72A0E1E72007C24C8 /* TunnelConfiguration.swift */; };
+		4B2A07F42A0E1E72007C24C8 /* WireGuardAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2A07E82A0E1E72007C24C8 /* WireGuardAdapter.swift */; };
+		4B2A07F52A0E1E72007C24C8 /* Array+ConcurrentMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2A07E92A0E1E72007C24C8 /* Array+ConcurrentMap.swift */; };
+		4B2A07F62A0E1E72007C24C8 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2A07EA2A0E1E72007C24C8 /* Endpoint.swift */; };
+		4B2A07FE2A0E1E82007C24C8 /* x25519.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B2A07FA2A0E1E81007C24C8 /* x25519.c */; };
+		4B2A07FF2A0E1E82007C24C8 /* key.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B2A07FD2A0E1E82007C24C8 /* key.c */; };
+		4B2A08092A0E1E91007C24C8 /* api-apple.go in Resources */ = {isa = PBXBuildFile; fileRef = 4B2A08022A0E1E91007C24C8 /* api-apple.go */; };
+		4B2A080A2A0E1E91007C24C8 /* go.sum in Resources */ = {isa = PBXBuildFile; fileRef = 4B2A08032A0E1E91007C24C8 /* go.sum */; };
+		4B2A080B2A0E1E91007C24C8 /* go.mod in Resources */ = {isa = PBXBuildFile; fileRef = 4B2A08042A0E1E91007C24C8 /* go.mod */; };
+		4B2A080C2A0E1E91007C24C8 /* goruntime-boottime-over-monotonic.diff in Resources */ = {isa = PBXBuildFile; fileRef = 4B2A08052A0E1E91007C24C8 /* goruntime-boottime-over-monotonic.diff */; };
+		4B2A080D2A0E1E91007C24C8 /* dummy.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B2A08062A0E1E91007C24C8 /* dummy.c */; };
+		4B2A080E2A0E1E91007C24C8 /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = 4B2A08072A0E1E91007C24C8 /* Makefile */; };
+		4B2A081C2A0E1EAB007C24C8 /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B2A08122A0E1EAB007C24C8 /* unzip.c */; };
+		4B2A081D2A0E1EAB007C24C8 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B2A08132A0E1EAB007C24C8 /* zip.c */; };
+		4B2A081E2A0E1EAB007C24C8 /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B2A08142A0E1EAB007C24C8 /* ioapi.c */; };
+		4B2A081F2A0E1EAB007C24C8 /* MiniZip64_info.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4B2A08152A0E1EAB007C24C8 /* MiniZip64_info.txt */; };
+		4B2A08202A0E1EAB007C24C8 /* ZipExporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2A08192A0E1EAB007C24C8 /* ZipExporter.swift */; };
+		4B2A08212A0E1EAB007C24C8 /* ZipImporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2A081A2A0E1EAB007C24C8 /* ZipImporter.swift */; };
+		4B2A08222A0E1EAB007C24C8 /* ZipArchive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2A081B2A0E1EAB007C24C8 /* ZipArchive.swift */; };
+		4B2A082A2A0E1F6F007C24C8 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B2A08292A0E1F6F007C24C8 /* NetworkExtension.framework */; };
+		4B2A082D2A0E1F6F007C24C8 /* PacketTunnelProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2A082C2A0E1F6F007C24C8 /* PacketTunnelProvider.swift */; };
+		4B2A08322A0E1F6F007C24C8 /* WireguardNetworkExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 4B2A08272A0E1F6F007C24C8 /* WireguardNetworkExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		4B2A083E2A0E2121007C24C8 /* ErrorNotifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2A083D2A0E2121007C24C8 /* ErrorNotifier.swift */; };
+		4B2A08472A0E2139007C24C8 /* key.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B2A08432A0E2139007C24C8 /* key.c */; };
+		4B2A08482A0E2139007C24C8 /* x25519.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B2A08452A0E2139007C24C8 /* x25519.c */; };
+		4B2A08492A0E2219007C24C8 /* libwg-go.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B2A07A82A0E1E2B007C24C8 /* libwg-go.a */; };
+		4B2A084A2A0E2243007C24C8 /* PeerConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2A07E62A0E1E72007C24C8 /* PeerConfiguration.swift */; };
+		4B2A084B2A0E2243007C24C8 /* PrivateKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2A07E12A0E1E72007C24C8 /* PrivateKey.swift */; };
+		4B2A084C2A0E2243007C24C8 /* IPAddress+AddrInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2A07DF2A0E1E72007C24C8 /* IPAddress+AddrInfo.swift */; };
+		4B2A084D2A0E2243007C24C8 /* DNSResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2A07E52A0E1E72007C24C8 /* DNSResolver.swift */; };
+		4B2A084E2A0E2243007C24C8 /* InterfaceConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2A07E32A0E1E72007C24C8 /* InterfaceConfiguration.swift */; };
+		4B2A084F2A0E2244007C24C8 /* TunnelConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2A07E72A0E1E72007C24C8 /* TunnelConfiguration.swift */; };
+		4B2A08502A0E2244007C24C8 /* WireGuardAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2A07E82A0E1E72007C24C8 /* WireGuardAdapter.swift */; };
+		4B2A08512A0E2244007C24C8 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2A07EA2A0E1E72007C24C8 /* Endpoint.swift */; };
+		4B2A08522A0E2244007C24C8 /* Array+ConcurrentMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2A07E92A0E1E72007C24C8 /* Array+ConcurrentMap.swift */; };
+		4B2A08532A0E2244007C24C8 /* IPAddressRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2A07E42A0E1E72007C24C8 /* IPAddressRange.swift */; };
+		4B2A08542A0E2244007C24C8 /* DNSServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2A07E22A0E1E72007C24C8 /* DNSServer.swift */; };
+		4B2A08552A0E2244007C24C8 /* PacketTunnelSettingsGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2A07E02A0E1E72007C24C8 /* PacketTunnelSettingsGenerator.swift */; };
+		4B2A08562A0E2261007C24C8 /* NETunnelProviderProtocol+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2A07C22A0E1E52007C24C8 /* NETunnelProviderProtocol+Extension.swift */; };
+		4B2A08572A0E2261007C24C8 /* TunnelConfiguration+WgQuickConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2A07C12A0E1E52007C24C8 /* TunnelConfiguration+WgQuickConfig.swift */; };
+		4B2A08582A0E2261007C24C8 /* String+ArrayConversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2A07C32A0E1E52007C24C8 /* String+ArrayConversion.swift */; };
+		4B2A08592A0E2266007C24C8 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2A07BC2A0E1E52007C24C8 /* Logger.swift */; };
+		4B2A085A2A0E2277007C24C8 /* ringlogger.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B2A07BB2A0E1E52007C24C8 /* ringlogger.c */; };
+		4B2A085B2A0E2286007C24C8 /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2A07B92A0E1E52007C24C8 /* Keychain.swift */; };
+		4B2A085C2A0E2286007C24C8 /* FileManager+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2A07BF2A0E1E52007C24C8 /* FileManager+Extension.swift */; };
+		4B2A085D2A0E22EB007C24C8 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B2A08292A0E1F6F007C24C8 /* NetworkExtension.framework */; };
+		4B2A08622A0E371F007C24C8 /* api-apple.go in Resources */ = {isa = PBXBuildFile; fileRef = 4B2A08022A0E1E91007C24C8 /* api-apple.go */; };
+		4B2A08632A0E372E007C24C8 /* go.mod in Resources */ = {isa = PBXBuildFile; fileRef = 4B2A08042A0E1E91007C24C8 /* go.mod */; };
+		4B2A08642A0E372E007C24C8 /* go.sum in Resources */ = {isa = PBXBuildFile; fileRef = 4B2A08032A0E1E91007C24C8 /* go.sum */; };
+		4B2A08652A0E372E007C24C8 /* goruntime-boottime-over-monotonic.diff in Resources */ = {isa = PBXBuildFile; fileRef = 4B2A08052A0E1E91007C24C8 /* goruntime-boottime-over-monotonic.diff */; };
+		77B91925F63ED1C9EC644A48 /* Pods_WireguardApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F56AE545BC0CFA7076EEB46 /* Pods_WireguardApp.framework */; };
+		A514D2912A13A3E9000A62AC /* CustomIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A514D25A2A13A3E7000A62AC /* CustomIndicator.swift */; };
+		A514D2922A13A3E9000A62AC /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A514D25C2A13A3E7000A62AC /* ActivityIndicator.swift */; };
+		A514D2932A13A3E9000A62AC /* CustomSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = A514D25E2A13A3E7000A62AC /* CustomSwitch.swift */; };
+		A514D2942A13A3E9000A62AC /* CustomThumbView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A514D25F2A13A3E7000A62AC /* CustomThumbView.swift */; };
+		A514D2952A13A3E9000A62AC /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A514D2612A13A3E7000A62AC /* UIView.swift */; };
+		A514D2962A13A3E9000A62AC /* UITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A514D2622A13A3E7000A62AC /* UITableViewCell.swift */; };
+		A514D2972A13A3E9000A62AC /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A514D2632A13A3E7000A62AC /* UIViewController.swift */; };
+		A514D2982A13A3E9000A62AC /* UIActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A514D2642A13A3E7000A62AC /* UIActivityIndicatorView.swift */; };
+		A514D2992A13A3E9000A62AC /* UISwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = A514D2652A13A3E7000A62AC /* UISwitch.swift */; };
+		A514D29A2A13A3E9000A62AC /* UITapGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A514D2662A13A3E7000A62AC /* UITapGestureRecognizer.swift */; };
+		A514D29B2A13A3E9000A62AC /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A514D2682A13A3E7000A62AC /* Storage.swift */; };
+		A514D29C2A13A3E9000A62AC /* KeychainAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = A514D2692A13A3E7000A62AC /* KeychainAccess.swift */; };
+		A514D29D2A13A3E9000A62AC /* UUID.swift in Sources */ = {isa = PBXBuildFile; fileRef = A514D26A2A13A3E7000A62AC /* UUID.swift */; };
+		A514D29E2A13A3E9000A62AC /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = A514D26B2A13A3E7000A62AC /* Reachability.swift */; };
+		A514D29F2A13A3E9000A62AC /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = A514D26D2A13A3E7000A62AC /* API.swift */; };
+		A514D2A02A13A3E9000A62AC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A514D26E2A13A3E7000A62AC /* Constants.swift */; };
+		A514D2A12A13A3E9000A62AC /* WebViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A514D2702A13A3E7000A62AC /* WebViewPresenter.swift */; };
+		A514D2A22A13A3E9000A62AC /* SettingsViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A514D2712A13A3E7000A62AC /* SettingsViewPresenter.swift */; };
+		A514D2A32A13A3E9000A62AC /* PayViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A514D2722A13A3E7000A62AC /* PayViewPresenter.swift */; };
+		A514D2A42A13A3E9000A62AC /* HomeViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A514D2732A13A3E7000A62AC /* HomeViewPresenter.swift */; };
+		A514D2A52A13A3E9000A62AC /* PayTableHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A514D2752A13A3E8000A62AC /* PayTableHeader.swift */; };
+		A514D2A62A13A3E9000A62AC /* SettingsTableHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A514D2762A13A3E8000A62AC /* SettingsTableHeader.swift */; };
+		A514D2A72A13A3E9000A62AC /* SettingsTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A514D2772A13A3E8000A62AC /* SettingsTableCell.swift */; };
+		A514D2A82A13A3E9000A62AC /* PayTableCell2.swift in Sources */ = {isa = PBXBuildFile; fileRef = A514D2782A13A3E8000A62AC /* PayTableCell2.swift */; };
+		A514D2A92A13A3E9000A62AC /* PayTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A514D2792A13A3E8000A62AC /* PayTableCell.swift */; };
+		A514D2AA2A13A3E9000A62AC /* PayTableFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A514D27A2A13A3E8000A62AC /* PayTableFooter.swift */; };
+		A514D2AB2A13A3E9000A62AC /* PayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A514D27C2A13A3E8000A62AC /* PayViewController.swift */; };
+		A514D2AC2A13A3E9000A62AC /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A514D27D2A13A3E8000A62AC /* HomeViewController.swift */; };
+		A514D2AD2A13A3E9000A62AC /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A514D27E2A13A3E8000A62AC /* WebViewController.swift */; };
+		A514D2AE2A13A3E9000A62AC /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A514D27F2A13A3E8000A62AC /* SettingsViewController.swift */; };
+		A514D2AF2A13A3E9000A62AC /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A514D2812A13A3E8000A62AC /* SettingsView.swift */; };
+		A514D2B02A13A3E9000A62AC /* PayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A514D2822A13A3E8000A62AC /* PayView.swift */; };
+		A514D2B12A13A3E9000A62AC /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A514D2832A13A3E8000A62AC /* HomeView.swift */; };
+		A514D2B22A13A3E9000A62AC /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A514D2842A13A3E8000A62AC /* WebView.swift */; };
+		A514D2B32A13A3E9000A62AC /* PaymentAttempt.swift in Sources */ = {isa = PBXBuildFile; fileRef = A514D2862A13A3E9000A62AC /* PaymentAttempt.swift */; };
+		A514D2B42A13A3E9000A62AC /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = A514D2872A13A3E9000A62AC /* Buttons.swift */; };
+		A514D2B52A13A3E9000A62AC /* ConnectAttempt.swift in Sources */ = {isa = PBXBuildFile; fileRef = A514D2882A13A3E9000A62AC /* ConnectAttempt.swift */; };
+		A514D2B62A13A3E9000A62AC /* DisconnectAttempt.swift in Sources */ = {isa = PBXBuildFile; fileRef = A514D2892A13A3E9000A62AC /* DisconnectAttempt.swift */; };
+		A514D2B72A13A3E9000A62AC /* Pay.swift in Sources */ = {isa = PBXBuildFile; fileRef = A514D28A2A13A3E9000A62AC /* Pay.swift */; };
+		A514D2B82A13A3E9000A62AC /* Offers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A514D28B2A13A3E9000A62AC /* Offers.swift */; };
+		A514D2B92A13A3E9000A62AC /* SettingsAttempt.swift in Sources */ = {isa = PBXBuildFile; fileRef = A514D28C2A13A3E9000A62AC /* SettingsAttempt.swift */; };
+		A514D2BA2A13A3E9000A62AC /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A514D28D2A13A3E9000A62AC /* Settings.swift */; };
+		A514D2BB2A13A3E9000A62AC /* LoadAttempt.swift in Sources */ = {isa = PBXBuildFile; fileRef = A514D28E2A13A3E9000A62AC /* LoadAttempt.swift */; };
+		A514D2BC2A13A3E9000A62AC /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = A514D28F2A13A3E9000A62AC /* Menu.swift */; };
+		A514D2BD2A13A3E9000A62AC /* MenuButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = A514D2902A13A3E9000A62AC /* MenuButtons.swift */; };
+		A514D2C52A13A8C0000A62AC /* Inter-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A514D2C02A13A8C0000A62AC /* Inter-Light.ttf */; };
+		A514D2C62A13A8C0000A62AC /* Inter-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A514D2C12A13A8C0000A62AC /* Inter-Bold.ttf */; };
+		A514D2C72A13A8C0000A62AC /* Inter-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A514D2C22A13A8C0000A62AC /* Inter-Regular.ttf */; };
+		A514D2C82A13A8C0000A62AC /* Inter-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A514D2C32A13A8C0000A62AC /* Inter-Black.ttf */; };
+		A514D2C92A13A8C0000A62AC /* Inter-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A514D2C42A13A8C0000A62AC /* Inter-SemiBold.ttf */; };
+		A514D2CC2A13AA83000A62AC /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A514D2CE2A13AA83000A62AC /* Localizable.strings */; };
+		A514D2D12A13E20F000A62AC /* Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = A514D2D02A13E20F000A62AC /* Int.swift */; };
+		A5244F152A1F8B360023797C /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5244F142A1F8B350023797C /* Theme.swift */; };
+		A5244F172A1F8BD00023797C /* LightTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5244F162A1F8BD00023797C /* LightTheme.swift */; };
+		A5244F192A1F8C2F0023797C /* DarkTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5244F182A1F8C2F0023797C /* DarkTheme.swift */; };
+		A52878322A29B9CB00779FC3 /* UINavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52878312A29B9CB00779FC3 /* UINavigationController.swift */; };
+		A54681332A1B8BCB00AA0C63 /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54681322A1B8BCA00AA0C63 /* SplashScreenViewController.swift */; };
+		A54681352A1B8C0800AA0C63 /* SplashScreenViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54681342A1B8C0800AA0C63 /* SplashScreenViewPresenter.swift */; };
+		A54681372A1B8C4100AA0C63 /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54681362A1B8C4100AA0C63 /* SplashScreenView.swift */; };
+		A54681392A1B8DCC00AA0C63 /* CALayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54681382A1B8DCC00AA0C63 /* CALayer.swift */; };
+		A585C7652A1F4AA8004C4B22 /* KronaOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A585C7642A1F4AA8004C4B22 /* KronaOne-Regular.ttf */; };
+		A58C5A872A16847B00189371 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58C5A862A16847900189371 /* Date.swift */; };
+		A5C9D7CC2A238FD500C6FAD8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A5C9D7CB2A238FD400C6FAD8 /* GoogleService-Info.plist */; };
+		A5C9D7CE2A2392D800C6FAD8 /* UserNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C9D7CD2A2392D800C6FAD8 /* UserNotifications.swift */; };
+		A5F32CCA2A30E082008B23DA /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F32CC92A30E082008B23DA /* String.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4B2A08302A0E1F6F007C24C8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4B2A07832A0E1BF3007C24C8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4B2A08262A0E1F6F007C24C8;
+			remoteInfo = WireguardNetworkExtension;
+		};
+		4B2A083B2A0E1FF9007C24C8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4B2A07832A0E1BF3007C24C8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4B2A08372A0E1FA3007C24C8;
+			remoteInfo = WireguardGoBridgeiOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4B2A08362A0E1F6F007C24C8 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				4B2A08322A0E1F6F007C24C8 /* WireguardNetworkExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		13862F24E0D484AFDD6DE195 /* Pods-WireguardNetworkExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WireguardNetworkExtension.debug.xcconfig"; path = "Target Support Files/Pods-WireguardNetworkExtension/Pods-WireguardNetworkExtension.debug.xcconfig"; sourceTree = "<group>"; };
+		48E2F2B704A8700E36BD1ADF /* Pods-WireguardNetworkExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WireguardNetworkExtension.release.xcconfig"; path = "Target Support Files/Pods-WireguardNetworkExtension/Pods-WireguardNetworkExtension.release.xcconfig"; sourceTree = "<group>"; };
+		4B2A078B2A0E1BF3007C24C8 /* WireguardApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WireguardApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B2A078E2A0E1BF3007C24C8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4B2A07902A0E1BF3007C24C8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		4B2A07952A0E1BF3007C24C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4B2A07972A0E1BF4007C24C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4B2A079A2A0E1BF4007C24C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4B2A079C2A0E1BF4007C24C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B2A07A62A0E1E2B007C24C8 /* TunnelImporter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TunnelImporter.swift; sourceTree = "<group>"; };
+		4B2A07A72A0E1E2B007C24C8 /* TunnelViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TunnelViewModel.swift; sourceTree = "<group>"; };
+		4B2A07A82A0E1E2B007C24C8 /* libwg-go.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libwg-go.a"; sourceTree = "<group>"; };
+		4B2A07A92A0E1E2B007C24C8 /* RecentTunnelsTracker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecentTunnelsTracker.swift; sourceTree = "<group>"; };
+		4B2A07B02A0E1E42007C24C8 /* Developer.xcconfig.template */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Developer.xcconfig.template; sourceTree = "<group>"; };
+		4B2A07B12A0E1E42007C24C8 /* Version.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Version.xcconfig; sourceTree = "<group>"; };
+		4B2A07B22A0E1E42007C24C8 /* Config.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		4B2A07B32A0E1E42007C24C8 /* Developer.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Developer.xcconfig; sourceTree = "<group>"; };
+		4B2A07B82A0E1E52007C24C8 /* NotificationToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationToken.swift; sourceTree = "<group>"; };
+		4B2A07B92A0E1E52007C24C8 /* Keychain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Keychain.swift; sourceTree = "<group>"; };
+		4B2A07BB2A0E1E52007C24C8 /* ringlogger.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ringlogger.c; sourceTree = "<group>"; };
+		4B2A07BC2A0E1E52007C24C8 /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		4B2A07BD2A0E1E52007C24C8 /* test_ringlogger.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = test_ringlogger.c; sourceTree = "<group>"; };
+		4B2A07BE2A0E1E52007C24C8 /* ringlogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ringlogger.h; sourceTree = "<group>"; };
+		4B2A07BF2A0E1E52007C24C8 /* FileManager+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FileManager+Extension.swift"; sourceTree = "<group>"; };
+		4B2A07C12A0E1E52007C24C8 /* TunnelConfiguration+WgQuickConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TunnelConfiguration+WgQuickConfig.swift"; sourceTree = "<group>"; };
+		4B2A07C22A0E1E52007C24C8 /* NETunnelProviderProtocol+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NETunnelProviderProtocol+Extension.swift"; sourceTree = "<group>"; };
+		4B2A07C32A0E1E52007C24C8 /* String+ArrayConversion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+ArrayConversion.swift"; sourceTree = "<group>"; };
+		4B2A07CE2A0E1E63007C24C8 /* ActivateOnDemandOption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivateOnDemandOption.swift; sourceTree = "<group>"; };
+		4B2A07CF2A0E1E63007C24C8 /* TunnelStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TunnelStatus.swift; sourceTree = "<group>"; };
+		4B2A07D02A0E1E63007C24C8 /* WireGuardResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WireGuardResult.swift; sourceTree = "<group>"; };
+		4B2A07D12A0E1E63007C24C8 /* TunnelConfiguration+UapiConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TunnelConfiguration+UapiConfig.swift"; sourceTree = "<group>"; };
+		4B2A07D22A0E1E63007C24C8 /* TunnelsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TunnelsManager.swift; sourceTree = "<group>"; };
+		4B2A07D32A0E1E63007C24C8 /* TunnelErrors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TunnelErrors.swift; sourceTree = "<group>"; };
+		4B2A07D42A0E1E63007C24C8 /* MockTunnels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockTunnels.swift; sourceTree = "<group>"; };
+		4B2A07D52A0E1E63007C24C8 /* WireGuardAppError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WireGuardAppError.swift; sourceTree = "<group>"; };
+		4B2A07DF2A0E1E72007C24C8 /* IPAddress+AddrInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IPAddress+AddrInfo.swift"; sourceTree = "<group>"; };
+		4B2A07E02A0E1E72007C24C8 /* PacketTunnelSettingsGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PacketTunnelSettingsGenerator.swift; sourceTree = "<group>"; };
+		4B2A07E12A0E1E72007C24C8 /* PrivateKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrivateKey.swift; sourceTree = "<group>"; };
+		4B2A07E22A0E1E72007C24C8 /* DNSServer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DNSServer.swift; sourceTree = "<group>"; };
+		4B2A07E32A0E1E72007C24C8 /* InterfaceConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterfaceConfiguration.swift; sourceTree = "<group>"; };
+		4B2A07E42A0E1E72007C24C8 /* IPAddressRange.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IPAddressRange.swift; sourceTree = "<group>"; };
+		4B2A07E52A0E1E72007C24C8 /* DNSResolver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DNSResolver.swift; sourceTree = "<group>"; };
+		4B2A07E62A0E1E72007C24C8 /* PeerConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeerConfiguration.swift; sourceTree = "<group>"; };
+		4B2A07E72A0E1E72007C24C8 /* TunnelConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TunnelConfiguration.swift; sourceTree = "<group>"; };
+		4B2A07E82A0E1E72007C24C8 /* WireGuardAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WireGuardAdapter.swift; sourceTree = "<group>"; };
+		4B2A07E92A0E1E72007C24C8 /* Array+ConcurrentMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+ConcurrentMap.swift"; sourceTree = "<group>"; };
+		4B2A07EA2A0E1E72007C24C8 /* Endpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		4B2A07F82A0E1E81007C24C8 /* WireGuardKitC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WireGuardKitC.h; sourceTree = "<group>"; };
+		4B2A07F92A0E1E81007C24C8 /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
+		4B2A07FA2A0E1E81007C24C8 /* x25519.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = x25519.c; sourceTree = "<group>"; };
+		4B2A07FB2A0E1E82007C24C8 /* x25519.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = x25519.h; sourceTree = "<group>"; };
+		4B2A07FC2A0E1E82007C24C8 /* key.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = key.h; sourceTree = "<group>"; };
+		4B2A07FD2A0E1E82007C24C8 /* key.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = key.c; sourceTree = "<group>"; };
+		4B2A08012A0E1E91007C24C8 /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
+		4B2A08022A0E1E91007C24C8 /* api-apple.go */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "api-apple.go"; sourceTree = "<group>"; };
+		4B2A08032A0E1E91007C24C8 /* go.sum */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = go.sum; sourceTree = "<group>"; };
+		4B2A08042A0E1E91007C24C8 /* go.mod */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = go.mod; sourceTree = "<group>"; };
+		4B2A08052A0E1E91007C24C8 /* goruntime-boottime-over-monotonic.diff */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "goruntime-boottime-over-monotonic.diff"; sourceTree = "<group>"; };
+		4B2A08062A0E1E91007C24C8 /* dummy.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = dummy.c; sourceTree = "<group>"; };
+		4B2A08072A0E1E91007C24C8 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		4B2A08082A0E1E91007C24C8 /* wireguard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wireguard.h; sourceTree = "<group>"; };
+		4B2A08122A0E1EAB007C24C8 /* unzip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = unzip.c; sourceTree = "<group>"; };
+		4B2A08132A0E1EAB007C24C8 /* zip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = zip.c; sourceTree = "<group>"; };
+		4B2A08142A0E1EAB007C24C8 /* ioapi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ioapi.c; sourceTree = "<group>"; };
+		4B2A08152A0E1EAB007C24C8 /* MiniZip64_info.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MiniZip64_info.txt; sourceTree = "<group>"; };
+		4B2A08162A0E1EAB007C24C8 /* zip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zip.h; sourceTree = "<group>"; };
+		4B2A08172A0E1EAB007C24C8 /* unzip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unzip.h; sourceTree = "<group>"; };
+		4B2A08182A0E1EAB007C24C8 /* ioapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ioapi.h; sourceTree = "<group>"; };
+		4B2A08192A0E1EAB007C24C8 /* ZipExporter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZipExporter.swift; sourceTree = "<group>"; };
+		4B2A081A2A0E1EAB007C24C8 /* ZipImporter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZipImporter.swift; sourceTree = "<group>"; };
+		4B2A081B2A0E1EAB007C24C8 /* ZipArchive.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZipArchive.swift; sourceTree = "<group>"; };
+		4B2A08272A0E1F6F007C24C8 /* WireguardNetworkExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = WireguardNetworkExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B2A08292A0E1F6F007C24C8 /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
+		4B2A082C2A0E1F6F007C24C8 /* PacketTunnelProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacketTunnelProvider.swift; sourceTree = "<group>"; };
+		4B2A082E2A0E1F6F007C24C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B2A082F2A0E1F6F007C24C8 /* WireguardNetworkExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WireguardNetworkExtension.entitlements; sourceTree = "<group>"; };
+		4B2A083D2A0E2121007C24C8 /* ErrorNotifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorNotifier.swift; sourceTree = "<group>"; };
+		4B2A08402A0E2138007C24C8 /* WireguardNetworkExtension-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WireguardNetworkExtension-Bridging-Header.h"; sourceTree = "<group>"; };
+		4B2A08412A0E2139007C24C8 /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
+		4B2A08422A0E2139007C24C8 /* key.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = key.h; sourceTree = "<group>"; };
+		4B2A08432A0E2139007C24C8 /* key.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = key.c; sourceTree = "<group>"; };
+		4B2A08442A0E2139007C24C8 /* WireGuardKitC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WireGuardKitC.h; sourceTree = "<group>"; };
+		4B2A08452A0E2139007C24C8 /* x25519.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = x25519.c; sourceTree = "<group>"; };
+		4B2A08462A0E2139007C24C8 /* x25519.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = x25519.h; sourceTree = "<group>"; };
+		4B2A08602A0E2546007C24C8 /* WireguardApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WireguardApp.entitlements; sourceTree = "<group>"; };
+		4B2A08612A0E276F007C24C8 /* WireguardApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WireguardApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		57503CC894A1B7FE5D0A0308 /* Pods-WireguardApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WireguardApp.debug.xcconfig"; path = "Target Support Files/Pods-WireguardApp/Pods-WireguardApp.debug.xcconfig"; sourceTree = "<group>"; };
+		5F56AE545BC0CFA7076EEB46 /* Pods_WireguardApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WireguardApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A514D25A2A13A3E7000A62AC /* CustomIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomIndicator.swift; sourceTree = "<group>"; };
+		A514D25C2A13A3E7000A62AC /* ActivityIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		A514D25E2A13A3E7000A62AC /* CustomSwitch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomSwitch.swift; sourceTree = "<group>"; };
+		A514D25F2A13A3E7000A62AC /* CustomThumbView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomThumbView.swift; sourceTree = "<group>"; };
+		A514D2612A13A3E7000A62AC /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		A514D2622A13A3E7000A62AC /* UITableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewCell.swift; sourceTree = "<group>"; };
+		A514D2632A13A3E7000A62AC /* UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		A514D2642A13A3E7000A62AC /* UIActivityIndicatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIActivityIndicatorView.swift; sourceTree = "<group>"; };
+		A514D2652A13A3E7000A62AC /* UISwitch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UISwitch.swift; sourceTree = "<group>"; };
+		A514D2662A13A3E7000A62AC /* UITapGestureRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITapGestureRecognizer.swift; sourceTree = "<group>"; };
+		A514D2682A13A3E7000A62AC /* Storage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
+		A514D2692A13A3E7000A62AC /* KeychainAccess.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainAccess.swift; sourceTree = "<group>"; };
+		A514D26A2A13A3E7000A62AC /* UUID.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UUID.swift; sourceTree = "<group>"; };
+		A514D26B2A13A3E7000A62AC /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		A514D26D2A13A3E7000A62AC /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		A514D26E2A13A3E7000A62AC /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		A514D2702A13A3E7000A62AC /* WebViewPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewPresenter.swift; sourceTree = "<group>"; };
+		A514D2712A13A3E7000A62AC /* SettingsViewPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewPresenter.swift; sourceTree = "<group>"; };
+		A514D2722A13A3E7000A62AC /* PayViewPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PayViewPresenter.swift; sourceTree = "<group>"; };
+		A514D2732A13A3E7000A62AC /* HomeViewPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewPresenter.swift; sourceTree = "<group>"; };
+		A514D2752A13A3E8000A62AC /* PayTableHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PayTableHeader.swift; sourceTree = "<group>"; };
+		A514D2762A13A3E8000A62AC /* SettingsTableHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableHeader.swift; sourceTree = "<group>"; };
+		A514D2772A13A3E8000A62AC /* SettingsTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableCell.swift; sourceTree = "<group>"; };
+		A514D2782A13A3E8000A62AC /* PayTableCell2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PayTableCell2.swift; sourceTree = "<group>"; };
+		A514D2792A13A3E8000A62AC /* PayTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PayTableCell.swift; sourceTree = "<group>"; };
+		A514D27A2A13A3E8000A62AC /* PayTableFooter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PayTableFooter.swift; sourceTree = "<group>"; };
+		A514D27C2A13A3E8000A62AC /* PayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PayViewController.swift; sourceTree = "<group>"; };
+		A514D27D2A13A3E8000A62AC /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		A514D27E2A13A3E8000A62AC /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		A514D27F2A13A3E8000A62AC /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		A514D2812A13A3E8000A62AC /* SettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		A514D2822A13A3E8000A62AC /* PayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PayView.swift; sourceTree = "<group>"; };
+		A514D2832A13A3E8000A62AC /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		A514D2842A13A3E8000A62AC /* WebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		A514D2862A13A3E9000A62AC /* PaymentAttempt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentAttempt.swift; sourceTree = "<group>"; };
+		A514D2872A13A3E9000A62AC /* Buttons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
+		A514D2882A13A3E9000A62AC /* ConnectAttempt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectAttempt.swift; sourceTree = "<group>"; };
+		A514D2892A13A3E9000A62AC /* DisconnectAttempt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisconnectAttempt.swift; sourceTree = "<group>"; };
+		A514D28A2A13A3E9000A62AC /* Pay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pay.swift; sourceTree = "<group>"; };
+		A514D28B2A13A3E9000A62AC /* Offers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Offers.swift; sourceTree = "<group>"; };
+		A514D28C2A13A3E9000A62AC /* SettingsAttempt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsAttempt.swift; sourceTree = "<group>"; };
+		A514D28D2A13A3E9000A62AC /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		A514D28E2A13A3E9000A62AC /* LoadAttempt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadAttempt.swift; sourceTree = "<group>"; };
+		A514D28F2A13A3E9000A62AC /* Menu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
+		A514D2902A13A3E9000A62AC /* MenuButtons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuButtons.swift; sourceTree = "<group>"; };
+		A514D2C02A13A8C0000A62AC /* Inter-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Light.ttf"; sourceTree = "<group>"; };
+		A514D2C12A13A8C0000A62AC /* Inter-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Bold.ttf"; sourceTree = "<group>"; };
+		A514D2C22A13A8C0000A62AC /* Inter-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Regular.ttf"; sourceTree = "<group>"; };
+		A514D2C32A13A8C0000A62AC /* Inter-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Black.ttf"; sourceTree = "<group>"; };
+		A514D2C42A13A8C0000A62AC /* Inter-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-SemiBold.ttf"; sourceTree = "<group>"; };
+		A514D2CD2A13AA83000A62AC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A514D2CF2A13AA99000A62AC /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A514D2D02A13E20F000A62AC /* Int.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Int.swift; sourceTree = "<group>"; };
+		A5244F142A1F8B350023797C /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		A5244F162A1F8BD00023797C /* LightTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightTheme.swift; sourceTree = "<group>"; };
+		A5244F182A1F8C2F0023797C /* DarkTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkTheme.swift; sourceTree = "<group>"; };
+		A52878312A29B9CB00779FC3 /* UINavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationController.swift; sourceTree = "<group>"; };
+		A54681322A1B8BCA00AA0C63 /* SplashScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenViewController.swift; sourceTree = "<group>"; };
+		A54681342A1B8C0800AA0C63 /* SplashScreenViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenViewPresenter.swift; sourceTree = "<group>"; };
+		A54681362A1B8C4100AA0C63 /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
+		A54681382A1B8DCC00AA0C63 /* CALayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CALayer.swift; sourceTree = "<group>"; };
+		A585C7642A1F4AA8004C4B22 /* KronaOne-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "KronaOne-Regular.ttf"; sourceTree = "<group>"; };
+		A58C5A862A16847900189371 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		A5C9D7CB2A238FD400C6FAD8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A5C9D7CD2A2392D800C6FAD8 /* UserNotifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserNotifications.swift; sourceTree = "<group>"; };
+		A5F32CC92A30E082008B23DA /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		B729CBBB396A095D0E499823 /* Pods-WireguardApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WireguardApp.release.xcconfig"; path = "Target Support Files/Pods-WireguardApp/Pods-WireguardApp.release.xcconfig"; sourceTree = "<group>"; };
+		C4C70E751747320AF90A8DD5 /* Pods_WireguardNetworkExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WireguardNetworkExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4B2A07882A0E1BF3007C24C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B2A07AC2A0E1E2B007C24C8 /* libwg-go.a in Frameworks */,
+				4B2A085D2A0E22EB007C24C8 /* NetworkExtension.framework in Frameworks */,
+				77B91925F63ED1C9EC644A48 /* Pods_WireguardApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B2A08242A0E1F6F007C24C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B2A082A2A0E1F6F007C24C8 /* NetworkExtension.framework in Frameworks */,
+				4B2A08492A0E2219007C24C8 /* libwg-go.a in Frameworks */,
+				08A5FBABC2F576EEFA1164E9 /* Pods_WireguardNetworkExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		353A946944B685CEEA359176 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				57503CC894A1B7FE5D0A0308 /* Pods-WireguardApp.debug.xcconfig */,
+				B729CBBB396A095D0E499823 /* Pods-WireguardApp.release.xcconfig */,
+				13862F24E0D484AFDD6DE195 /* Pods-WireguardNetworkExtension.debug.xcconfig */,
+				48E2F2B704A8700E36BD1ADF /* Pods-WireguardNetworkExtension.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		4B2A07822A0E1BF3007C24C8 = {
+			isa = PBXGroup;
+			children = (
+				4B2A078D2A0E1BF3007C24C8 /* WireguardApp */,
+				4B2A082B2A0E1F6F007C24C8 /* WireguardNetworkExtension */,
+				4B2A08282A0E1F6F007C24C8 /* Frameworks */,
+				4B2A078C2A0E1BF3007C24C8 /* Products */,
+				353A946944B685CEEA359176 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		4B2A078C2A0E1BF3007C24C8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4B2A078B2A0E1BF3007C24C8 /* WireguardApp.app */,
+				4B2A08272A0E1F6F007C24C8 /* WireguardNetworkExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4B2A078D2A0E1BF3007C24C8 /* WireguardApp */ = {
+			isa = PBXGroup;
+			children = (
+				A5C9D7CB2A238FD400C6FAD8 /* GoogleService-Info.plist */,
+				4B2A08602A0E2546007C24C8 /* WireguardApp.entitlements */,
+				4B2A08612A0E276F007C24C8 /* WireguardApp-Bridging-Header.h */,
+				4B2A07A42A0E1C6A007C24C8 /* LibraryClasses */,
+				A514D2562A13A39C000A62AC /* Resources */,
+				A514D2552A13A38E000A62AC /* Sources */,
+			);
+			path = WireguardApp;
+			sourceTree = "<group>";
+		};
+		4B2A07A42A0E1C6A007C24C8 /* LibraryClasses */ = {
+			isa = PBXGroup;
+			children = (
+				4B2A07A52A0E1C73007C24C8 /* Wireguard */,
+			);
+			path = LibraryClasses;
+			sourceTree = "<group>";
+		};
+		4B2A07A52A0E1C73007C24C8 /* Wireguard */ = {
+			isa = PBXGroup;
+			children = (
+				4B2A080F2A0E1E9F007C24C8 /* ZipArchive */,
+				4B2A08002A0E1E8B007C24C8 /* WireGuardKitGo */,
+				4B2A07F72A0E1E79007C24C8 /* WireGuardKitC */,
+				4B2A07DE2A0E1E66007C24C8 /* WireGuardKit */,
+				4B2A07CD2A0E1E5C007C24C8 /* Tunnel */,
+				4B2A07AF2A0E1E39007C24C8 /* Shared */,
+				4B2A07AE2A0E1E2E007C24C8 /* Config */,
+				4B2A07A82A0E1E2B007C24C8 /* libwg-go.a */,
+				4B2A07A92A0E1E2B007C24C8 /* RecentTunnelsTracker.swift */,
+				4B2A07A62A0E1E2B007C24C8 /* TunnelImporter.swift */,
+				4B2A07A72A0E1E2B007C24C8 /* TunnelViewModel.swift */,
+			);
+			path = Wireguard;
+			sourceTree = "<group>";
+		};
+		4B2A07AE2A0E1E2E007C24C8 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				4B2A07B22A0E1E42007C24C8 /* Config.xcconfig */,
+				4B2A07B32A0E1E42007C24C8 /* Developer.xcconfig */,
+				4B2A07B02A0E1E42007C24C8 /* Developer.xcconfig.template */,
+				4B2A07B12A0E1E42007C24C8 /* Version.xcconfig */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		4B2A07AF2A0E1E39007C24C8 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				4B2A07BF2A0E1E52007C24C8 /* FileManager+Extension.swift */,
+				4B2A07B92A0E1E52007C24C8 /* Keychain.swift */,
+				4B2A07BA2A0E1E52007C24C8 /* Logging */,
+				4B2A07C02A0E1E52007C24C8 /* Model */,
+				4B2A07B82A0E1E52007C24C8 /* NotificationToken.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		4B2A07BA2A0E1E52007C24C8 /* Logging */ = {
+			isa = PBXGroup;
+			children = (
+				4B2A07BB2A0E1E52007C24C8 /* ringlogger.c */,
+				4B2A07BC2A0E1E52007C24C8 /* Logger.swift */,
+				4B2A07BD2A0E1E52007C24C8 /* test_ringlogger.c */,
+				4B2A07BE2A0E1E52007C24C8 /* ringlogger.h */,
+			);
+			path = Logging;
+			sourceTree = "<group>";
+		};
+		4B2A07C02A0E1E52007C24C8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4B2A07C12A0E1E52007C24C8 /* TunnelConfiguration+WgQuickConfig.swift */,
+				4B2A07C22A0E1E52007C24C8 /* NETunnelProviderProtocol+Extension.swift */,
+				4B2A07C32A0E1E52007C24C8 /* String+ArrayConversion.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4B2A07CD2A0E1E5C007C24C8 /* Tunnel */ = {
+			isa = PBXGroup;
+			children = (
+				4B2A07CE2A0E1E63007C24C8 /* ActivateOnDemandOption.swift */,
+				4B2A07D42A0E1E63007C24C8 /* MockTunnels.swift */,
+				4B2A07D12A0E1E63007C24C8 /* TunnelConfiguration+UapiConfig.swift */,
+				4B2A07D32A0E1E63007C24C8 /* TunnelErrors.swift */,
+				4B2A07D22A0E1E63007C24C8 /* TunnelsManager.swift */,
+				4B2A07CF2A0E1E63007C24C8 /* TunnelStatus.swift */,
+				4B2A07D52A0E1E63007C24C8 /* WireGuardAppError.swift */,
+				4B2A07D02A0E1E63007C24C8 /* WireGuardResult.swift */,
+			);
+			path = Tunnel;
+			sourceTree = "<group>";
+		};
+		4B2A07DE2A0E1E66007C24C8 /* WireGuardKit */ = {
+			isa = PBXGroup;
+			children = (
+				4B2A07E92A0E1E72007C24C8 /* Array+ConcurrentMap.swift */,
+				4B2A07E52A0E1E72007C24C8 /* DNSResolver.swift */,
+				4B2A07E22A0E1E72007C24C8 /* DNSServer.swift */,
+				4B2A07EA2A0E1E72007C24C8 /* Endpoint.swift */,
+				4B2A07E32A0E1E72007C24C8 /* InterfaceConfiguration.swift */,
+				4B2A07DF2A0E1E72007C24C8 /* IPAddress+AddrInfo.swift */,
+				4B2A07E42A0E1E72007C24C8 /* IPAddressRange.swift */,
+				4B2A07E02A0E1E72007C24C8 /* PacketTunnelSettingsGenerator.swift */,
+				4B2A07E62A0E1E72007C24C8 /* PeerConfiguration.swift */,
+				4B2A07E12A0E1E72007C24C8 /* PrivateKey.swift */,
+				4B2A07E72A0E1E72007C24C8 /* TunnelConfiguration.swift */,
+				4B2A07E82A0E1E72007C24C8 /* WireGuardAdapter.swift */,
+			);
+			path = WireGuardKit;
+			sourceTree = "<group>";
+		};
+		4B2A07F72A0E1E79007C24C8 /* WireGuardKitC */ = {
+			isa = PBXGroup;
+			children = (
+				4B2A07FD2A0E1E82007C24C8 /* key.c */,
+				4B2A07FC2A0E1E82007C24C8 /* key.h */,
+				4B2A07F92A0E1E81007C24C8 /* module.modulemap */,
+				4B2A07F82A0E1E81007C24C8 /* WireGuardKitC.h */,
+				4B2A07FA2A0E1E81007C24C8 /* x25519.c */,
+				4B2A07FB2A0E1E82007C24C8 /* x25519.h */,
+			);
+			path = WireGuardKitC;
+			sourceTree = "<group>";
+		};
+		4B2A08002A0E1E8B007C24C8 /* WireGuardKitGo */ = {
+			isa = PBXGroup;
+			children = (
+				4B2A08022A0E1E91007C24C8 /* api-apple.go */,
+				4B2A08062A0E1E91007C24C8 /* dummy.c */,
+				4B2A08042A0E1E91007C24C8 /* go.mod */,
+				4B2A08032A0E1E91007C24C8 /* go.sum */,
+				4B2A08052A0E1E91007C24C8 /* goruntime-boottime-over-monotonic.diff */,
+				4B2A08072A0E1E91007C24C8 /* Makefile */,
+				4B2A08012A0E1E91007C24C8 /* module.modulemap */,
+				4B2A08082A0E1E91007C24C8 /* wireguard.h */,
+			);
+			path = WireGuardKitGo;
+			sourceTree = "<group>";
+		};
+		4B2A080F2A0E1E9F007C24C8 /* ZipArchive */ = {
+			isa = PBXGroup;
+			children = (
+				4B2A08102A0E1EAB007C24C8 /* 3rdparty */,
+				4B2A081B2A0E1EAB007C24C8 /* ZipArchive.swift */,
+				4B2A08192A0E1EAB007C24C8 /* ZipExporter.swift */,
+				4B2A081A2A0E1EAB007C24C8 /* ZipImporter.swift */,
+			);
+			path = ZipArchive;
+			sourceTree = "<group>";
+		};
+		4B2A08102A0E1EAB007C24C8 /* 3rdparty */ = {
+			isa = PBXGroup;
+			children = (
+				4B2A08112A0E1EAB007C24C8 /* minizip */,
+			);
+			path = 3rdparty;
+			sourceTree = "<group>";
+		};
+		4B2A08112A0E1EAB007C24C8 /* minizip */ = {
+			isa = PBXGroup;
+			children = (
+				4B2A08122A0E1EAB007C24C8 /* unzip.c */,
+				4B2A08132A0E1EAB007C24C8 /* zip.c */,
+				4B2A08142A0E1EAB007C24C8 /* ioapi.c */,
+				4B2A08152A0E1EAB007C24C8 /* MiniZip64_info.txt */,
+				4B2A08162A0E1EAB007C24C8 /* zip.h */,
+				4B2A08172A0E1EAB007C24C8 /* unzip.h */,
+				4B2A08182A0E1EAB007C24C8 /* ioapi.h */,
+			);
+			path = minizip;
+			sourceTree = "<group>";
+		};
+		4B2A08282A0E1F6F007C24C8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4B2A08292A0E1F6F007C24C8 /* NetworkExtension.framework */,
+				5F56AE545BC0CFA7076EEB46 /* Pods_WireguardApp.framework */,
+				C4C70E751747320AF90A8DD5 /* Pods_WireguardNetworkExtension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4B2A082B2A0E1F6F007C24C8 /* WireguardNetworkExtension */ = {
+			isa = PBXGroup;
+			children = (
+				4B2A083F2A0E212E007C24C8 /* WireGuardKitC */,
+				4B2A083D2A0E2121007C24C8 /* ErrorNotifier.swift */,
+				4B2A082C2A0E1F6F007C24C8 /* PacketTunnelProvider.swift */,
+				4B2A082E2A0E1F6F007C24C8 /* Info.plist */,
+				4B2A082F2A0E1F6F007C24C8 /* WireguardNetworkExtension.entitlements */,
+				4B2A08402A0E2138007C24C8 /* WireguardNetworkExtension-Bridging-Header.h */,
+			);
+			path = WireguardNetworkExtension;
+			sourceTree = "<group>";
+		};
+		4B2A083F2A0E212E007C24C8 /* WireGuardKitC */ = {
+			isa = PBXGroup;
+			children = (
+				4B2A08432A0E2139007C24C8 /* key.c */,
+				4B2A08422A0E2139007C24C8 /* key.h */,
+				4B2A08412A0E2139007C24C8 /* module.modulemap */,
+				4B2A08442A0E2139007C24C8 /* WireGuardKitC.h */,
+				4B2A08452A0E2139007C24C8 /* x25519.c */,
+				4B2A08462A0E2139007C24C8 /* x25519.h */,
+			);
+			path = WireGuardKitC;
+			sourceTree = "<group>";
+		};
+		A514D2552A13A38E000A62AC /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				4B2A078E2A0E1BF3007C24C8 /* AppDelegate.swift */,
+				A514D26E2A13A3E7000A62AC /* Constants.swift */,
+				4B2A07902A0E1BF3007C24C8 /* SceneDelegate.swift */,
+				A5C9D7CD2A2392D800C6FAD8 /* UserNotifications.swift */,
+				A514D2852A13A3E9000A62AC /* Model */,
+				A514D2742A13A3E8000A62AC /* TableViewCell */,
+				A514D2572A13A3E7000A62AC /* Util */,
+				A514D2802A13A3E8000A62AC /* View */,
+				A514D27B2A13A3E8000A62AC /* ViewController */,
+				A514D26F2A13A3E7000A62AC /* ViewPresenter */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		A514D2562A13A39C000A62AC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A514D2BE2A13A8C0000A62AC /* Fonts */,
+				4B2A07972A0E1BF4007C24C8 /* Assets.xcassets */,
+				4B2A07992A0E1BF4007C24C8 /* LaunchScreen.storyboard */,
+				4B2A07942A0E1BF3007C24C8 /* Main.storyboard */,
+				4B2A079C2A0E1BF4007C24C8 /* Info.plist */,
+				A514D2CE2A13AA83000A62AC /* Localizable.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A514D2572A13A3E7000A62AC /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				A5244F1A2A2096A50023797C /* Theme */,
+				A514D2582A13A3E7000A62AC /* UI */,
+				A514D2602A13A3E7000A62AC /* Extensions */,
+				A514D2672A13A3E7000A62AC /* Helper */,
+				A514D26C2A13A3E7000A62AC /* Services */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		A514D2582A13A3E7000A62AC /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				A514D2592A13A3E7000A62AC /* CustomIndicator */,
+				A514D25B2A13A3E7000A62AC /* ActivityIndicator */,
+				A514D25D2A13A3E7000A62AC /* CustomSwitch */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		A514D2592A13A3E7000A62AC /* CustomIndicator */ = {
+			isa = PBXGroup;
+			children = (
+				A514D25A2A13A3E7000A62AC /* CustomIndicator.swift */,
+			);
+			path = CustomIndicator;
+			sourceTree = "<group>";
+		};
+		A514D25B2A13A3E7000A62AC /* ActivityIndicator */ = {
+			isa = PBXGroup;
+			children = (
+				A514D25C2A13A3E7000A62AC /* ActivityIndicator.swift */,
+			);
+			path = ActivityIndicator;
+			sourceTree = "<group>";
+		};
+		A514D25D2A13A3E7000A62AC /* CustomSwitch */ = {
+			isa = PBXGroup;
+			children = (
+				A514D25E2A13A3E7000A62AC /* CustomSwitch.swift */,
+				A514D25F2A13A3E7000A62AC /* CustomThumbView.swift */,
+			);
+			path = CustomSwitch;
+			sourceTree = "<group>";
+		};
+		A514D2602A13A3E7000A62AC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A514D2612A13A3E7000A62AC /* UIView.swift */,
+				A514D2622A13A3E7000A62AC /* UITableViewCell.swift */,
+				A514D2632A13A3E7000A62AC /* UIViewController.swift */,
+				A514D2642A13A3E7000A62AC /* UIActivityIndicatorView.swift */,
+				A514D2652A13A3E7000A62AC /* UISwitch.swift */,
+				A514D2662A13A3E7000A62AC /* UITapGestureRecognizer.swift */,
+				A514D2D02A13E20F000A62AC /* Int.swift */,
+				A58C5A862A16847900189371 /* Date.swift */,
+				A54681382A1B8DCC00AA0C63 /* CALayer.swift */,
+				A52878312A29B9CB00779FC3 /* UINavigationController.swift */,
+				A5F32CC92A30E082008B23DA /* String.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A514D2672A13A3E7000A62AC /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				A514D2682A13A3E7000A62AC /* Storage.swift */,
+				A514D2692A13A3E7000A62AC /* KeychainAccess.swift */,
+				A514D26A2A13A3E7000A62AC /* UUID.swift */,
+				A514D26B2A13A3E7000A62AC /* Reachability.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		A514D26C2A13A3E7000A62AC /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A514D26D2A13A3E7000A62AC /* API.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A514D26F2A13A3E7000A62AC /* ViewPresenter */ = {
+			isa = PBXGroup;
+			children = (
+				A514D2702A13A3E7000A62AC /* WebViewPresenter.swift */,
+				A514D2712A13A3E7000A62AC /* SettingsViewPresenter.swift */,
+				A514D2722A13A3E7000A62AC /* PayViewPresenter.swift */,
+				A514D2732A13A3E7000A62AC /* HomeViewPresenter.swift */,
+				A54681342A1B8C0800AA0C63 /* SplashScreenViewPresenter.swift */,
+			);
+			path = ViewPresenter;
+			sourceTree = "<group>";
+		};
+		A514D2742A13A3E8000A62AC /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				A514D2752A13A3E8000A62AC /* PayTableHeader.swift */,
+				A514D2762A13A3E8000A62AC /* SettingsTableHeader.swift */,
+				A514D2772A13A3E8000A62AC /* SettingsTableCell.swift */,
+				A514D2782A13A3E8000A62AC /* PayTableCell2.swift */,
+				A514D2792A13A3E8000A62AC /* PayTableCell.swift */,
+				A514D27A2A13A3E8000A62AC /* PayTableFooter.swift */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		A514D27B2A13A3E8000A62AC /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A514D27C2A13A3E8000A62AC /* PayViewController.swift */,
+				A514D27D2A13A3E8000A62AC /* HomeViewController.swift */,
+				A514D27E2A13A3E8000A62AC /* WebViewController.swift */,
+				A514D27F2A13A3E8000A62AC /* SettingsViewController.swift */,
+				A54681322A1B8BCA00AA0C63 /* SplashScreenViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		A514D2802A13A3E8000A62AC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A514D2812A13A3E8000A62AC /* SettingsView.swift */,
+				A514D2822A13A3E8000A62AC /* PayView.swift */,
+				A514D2832A13A3E8000A62AC /* HomeView.swift */,
+				A514D2842A13A3E8000A62AC /* WebView.swift */,
+				A54681362A1B8C4100AA0C63 /* SplashScreenView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A514D2852A13A3E9000A62AC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A514D2862A13A3E9000A62AC /* PaymentAttempt.swift */,
+				A514D2872A13A3E9000A62AC /* Buttons.swift */,
+				A514D2882A13A3E9000A62AC /* ConnectAttempt.swift */,
+				A514D2892A13A3E9000A62AC /* DisconnectAttempt.swift */,
+				A514D28A2A13A3E9000A62AC /* Pay.swift */,
+				A514D28B2A13A3E9000A62AC /* Offers.swift */,
+				A514D28C2A13A3E9000A62AC /* SettingsAttempt.swift */,
+				A514D28D2A13A3E9000A62AC /* Settings.swift */,
+				A514D28E2A13A3E9000A62AC /* LoadAttempt.swift */,
+				A514D28F2A13A3E9000A62AC /* Menu.swift */,
+				A514D2902A13A3E9000A62AC /* MenuButtons.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A514D2BE2A13A8C0000A62AC /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				A585C7612A1F4A64004C4B22 /* KronaOne */,
+				A514D2BF2A13A8C0000A62AC /* Inter */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		A514D2BF2A13A8C0000A62AC /* Inter */ = {
+			isa = PBXGroup;
+			children = (
+				A514D2C02A13A8C0000A62AC /* Inter-Light.ttf */,
+				A514D2C12A13A8C0000A62AC /* Inter-Bold.ttf */,
+				A514D2C22A13A8C0000A62AC /* Inter-Regular.ttf */,
+				A514D2C32A13A8C0000A62AC /* Inter-Black.ttf */,
+				A514D2C42A13A8C0000A62AC /* Inter-SemiBold.ttf */,
+			);
+			path = Inter;
+			sourceTree = "<group>";
+		};
+		A5244F1A2A2096A50023797C /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				A5244F182A1F8C2F0023797C /* DarkTheme.swift */,
+				A5244F162A1F8BD00023797C /* LightTheme.swift */,
+				A5244F142A1F8B350023797C /* Theme.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		A585C7612A1F4A64004C4B22 /* KronaOne */ = {
+			isa = PBXGroup;
+			children = (
+				A585C7642A1F4AA8004C4B22 /* KronaOne-Regular.ttf */,
+			);
+			path = KronaOne;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXLegacyTarget section */
+		4B2A08372A0E1FA3007C24C8 /* WireguardGoBridgeiOS */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "$(ACTION)";
+			buildConfigurationList = 4B2A08382A0E1FA3007C24C8 /* Build configuration list for PBXLegacyTarget "WireguardGoBridgeiOS" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/bin/make;
+			buildWorkingDirectory = "$(PROJECT_DIR)/WireguardApp/LibraryClasses/Wireguard/WireGuardKitGo";
+			dependencies = (
+			);
+			name = WireguardGoBridgeiOS;
+			passBuildSettingsInEnvironment = 1;
+			productName = WireguardGoBridgeiOS;
+		};
+/* End PBXLegacyTarget section */
+
+/* Begin PBXNativeTarget section */
+		4B2A078A2A0E1BF3007C24C8 /* WireguardApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B2A079F2A0E1BF4007C24C8 /* Build configuration list for PBXNativeTarget "WireguardApp" */;
+			buildPhases = (
+				B529CB5983EF9CC546526DB2 /* [CP] Check Pods Manifest.lock */,
+				4B2A07872A0E1BF3007C24C8 /* Sources */,
+				4B2A07882A0E1BF3007C24C8 /* Frameworks */,
+				4B2A07892A0E1BF3007C24C8 /* Resources */,
+				4B2A08362A0E1F6F007C24C8 /* Embed Foundation Extensions */,
+				4B2A085E2A0E2315007C24C8 /* Extract wireguard-go Version */,
+				4B2A085F2A0E2371007C24C8 /* Strip Trailing Whitespace */,
+				B5A6EB1D8D071720FA43E3C8 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4B2A08312A0E1F6F007C24C8 /* PBXTargetDependency */,
+			);
+			name = WireguardApp;
+			productName = WireguardApp;
+			productReference = 4B2A078B2A0E1BF3007C24C8 /* WireguardApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4B2A08262A0E1F6F007C24C8 /* WireguardNetworkExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B2A08332A0E1F6F007C24C8 /* Build configuration list for PBXNativeTarget "WireguardNetworkExtension" */;
+			buildPhases = (
+				EC1A1559250F4CC7DCE0C73C /* [CP] Check Pods Manifest.lock */,
+				4B2A08232A0E1F6F007C24C8 /* Sources */,
+				4B2A08242A0E1F6F007C24C8 /* Frameworks */,
+				4B2A08252A0E1F6F007C24C8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4B2A083C2A0E1FF9007C24C8 /* PBXTargetDependency */,
+			);
+			name = WireguardNetworkExtension;
+			productName = WireguardNetworkExtension;
+			productReference = 4B2A08272A0E1F6F007C24C8 /* WireguardNetworkExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4B2A07832A0E1BF3007C24C8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					4B2A078A2A0E1BF3007C24C8 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					4B2A08262A0E1F6F007C24C8 = {
+						CreatedOnToolsVersion = 14.3;
+						LastSwiftMigration = 1430;
+					};
+					4B2A08372A0E1FA3007C24C8 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+				};
+			};
+			buildConfigurationList = 4B2A07862A0E1BF3007C24C8 /* Build configuration list for PBXProject "WireguardApp" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				ru,
+			);
+			mainGroup = 4B2A07822A0E1BF3007C24C8;
+			productRefGroup = 4B2A078C2A0E1BF3007C24C8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4B2A078A2A0E1BF3007C24C8 /* WireguardApp */,
+				4B2A08262A0E1F6F007C24C8 /* WireguardNetworkExtension */,
+				4B2A08372A0E1FA3007C24C8 /* WireguardGoBridgeiOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4B2A07892A0E1BF3007C24C8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B2A080B2A0E1E91007C24C8 /* go.mod in Resources */,
+				4B2A081F2A0E1EAB007C24C8 /* MiniZip64_info.txt in Resources */,
+				4B2A079B2A0E1BF4007C24C8 /* LaunchScreen.storyboard in Resources */,
+				A514D2C92A13A8C0000A62AC /* Inter-SemiBold.ttf in Resources */,
+				4B2A08092A0E1E91007C24C8 /* api-apple.go in Resources */,
+				4B2A07982A0E1BF4007C24C8 /* Assets.xcassets in Resources */,
+				4B2A080A2A0E1E91007C24C8 /* go.sum in Resources */,
+				A514D2C62A13A8C0000A62AC /* Inter-Bold.ttf in Resources */,
+				A514D2C72A13A8C0000A62AC /* Inter-Regular.ttf in Resources */,
+				4B2A080C2A0E1E91007C24C8 /* goruntime-boottime-over-monotonic.diff in Resources */,
+				A514D2C52A13A8C0000A62AC /* Inter-Light.ttf in Resources */,
+				4B2A07B42A0E1E42007C24C8 /* Developer.xcconfig.template in Resources */,
+				A5C9D7CC2A238FD500C6FAD8 /* GoogleService-Info.plist in Resources */,
+				A585C7652A1F4AA8004C4B22 /* KronaOne-Regular.ttf in Resources */,
+				A514D2CC2A13AA83000A62AC /* Localizable.strings in Resources */,
+				4B2A07962A0E1BF3007C24C8 /* Main.storyboard in Resources */,
+				A514D2C82A13A8C0000A62AC /* Inter-Black.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B2A08252A0E1F6F007C24C8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B2A08632A0E372E007C24C8 /* go.mod in Resources */,
+				4B2A08642A0E372E007C24C8 /* go.sum in Resources */,
+				4B2A08652A0E372E007C24C8 /* goruntime-boottime-over-monotonic.diff in Resources */,
+				4B2A08622A0E371F007C24C8 /* api-apple.go in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4B2A085E2A0E2315007C24C8 /* Extract wireguard-go Version */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Extract wireguard-go Version";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nexec make -C \"$PROJECT_DIR/WireguardApp/LibraryClasses/Wireguard/WireGuardKitGo\" version-header\n";
+		};
+		4B2A085F2A0E2371007C24C8 /* Strip Trailing Whitespace */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Strip Trailing Whitespace";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nfind . -name '*.swift' -exec sed -i '' -E 's/[[:space:]]+$//g' {} +\n";
+		};
+		B529CB5983EF9CC546526DB2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WireguardApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B5A6EB1D8D071720FA43E3C8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WireguardApp/Pods-WireguardApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WireguardApp/Pods-WireguardApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WireguardApp/Pods-WireguardApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EC1A1559250F4CC7DCE0C73C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WireguardNetworkExtension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4B2A07872A0E1BF3007C24C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A514D2972A13A3E9000A62AC /* UIViewController.swift in Sources */,
+				A52878322A29B9CB00779FC3 /* UINavigationController.swift in Sources */,
+				A514D2AB2A13A3E9000A62AC /* PayViewController.swift in Sources */,
+				4B2A07AB2A0E1E2B007C24C8 /* TunnelViewModel.swift in Sources */,
+				4B2A07F12A0E1E72007C24C8 /* DNSResolver.swift in Sources */,
+				4B2A07F32A0E1E72007C24C8 /* TunnelConfiguration.swift in Sources */,
+				A514D2AF2A13A3E9000A62AC /* SettingsView.swift in Sources */,
+				4B2A07D72A0E1E63007C24C8 /* TunnelStatus.swift in Sources */,
+				A54681372A1B8C4100AA0C63 /* SplashScreenView.swift in Sources */,
+				4B2A07CA2A0E1E52007C24C8 /* TunnelConfiguration+WgQuickConfig.swift in Sources */,
+				A514D2B92A13A3E9000A62AC /* SettingsAttempt.swift in Sources */,
+				A514D2942A13A3E9000A62AC /* CustomThumbView.swift in Sources */,
+				4B2A08212A0E1EAB007C24C8 /* ZipImporter.swift in Sources */,
+				4B2A07AD2A0E1E2B007C24C8 /* RecentTunnelsTracker.swift in Sources */,
+				A514D2B22A13A3E9000A62AC /* WebView.swift in Sources */,
+				A514D2A02A13A3E9000A62AC /* Constants.swift in Sources */,
+				A514D2B02A13A3E9000A62AC /* PayView.swift in Sources */,
+				A514D2D12A13E20F000A62AC /* Int.swift in Sources */,
+				4B2A081E2A0E1EAB007C24C8 /* ioapi.c in Sources */,
+				A514D2B82A13A3E9000A62AC /* Offers.swift in Sources */,
+				A5244F192A1F8C2F0023797C /* DarkTheme.swift in Sources */,
+				4B2A081C2A0E1EAB007C24C8 /* unzip.c in Sources */,
+				4B2A07EE2A0E1E72007C24C8 /* DNSServer.swift in Sources */,
+				A514D2A22A13A3E9000A62AC /* SettingsViewPresenter.swift in Sources */,
+				A514D2BA2A13A3E9000A62AC /* Settings.swift in Sources */,
+				A514D2A42A13A3E9000A62AC /* HomeViewPresenter.swift in Sources */,
+				4B2A080D2A0E1E91007C24C8 /* dummy.c in Sources */,
+				4B2A07D82A0E1E63007C24C8 /* WireGuardResult.swift in Sources */,
+				A514D29A2A13A3E9000A62AC /* UITapGestureRecognizer.swift in Sources */,
+				A514D2B62A13A3E9000A62AC /* DisconnectAttempt.swift in Sources */,
+				A514D29B2A13A3E9000A62AC /* Storage.swift in Sources */,
+				4B2A078F2A0E1BF3007C24C8 /* AppDelegate.swift in Sources */,
+				4B2A07DA2A0E1E63007C24C8 /* TunnelsManager.swift in Sources */,
+				A514D2B72A13A3E9000A62AC /* Pay.swift in Sources */,
+				A514D2AE2A13A3E9000A62AC /* SettingsViewController.swift in Sources */,
+				A514D29F2A13A3E9000A62AC /* API.swift in Sources */,
+				4B2A081D2A0E1EAB007C24C8 /* zip.c in Sources */,
+				A514D2992A13A3E9000A62AC /* UISwitch.swift in Sources */,
+				4B2A07912A0E1BF3007C24C8 /* SceneDelegate.swift in Sources */,
+				4B2A07C92A0E1E52007C24C8 /* FileManager+Extension.swift in Sources */,
+				4B2A07D62A0E1E63007C24C8 /* ActivateOnDemandOption.swift in Sources */,
+				A54681352A1B8C0800AA0C63 /* SplashScreenViewPresenter.swift in Sources */,
+				A514D2A32A13A3E9000A62AC /* PayViewPresenter.swift in Sources */,
+				4B2A08222A0E1EAB007C24C8 /* ZipArchive.swift in Sources */,
+				A514D29D2A13A3E9000A62AC /* UUID.swift in Sources */,
+				A514D2A52A13A3E9000A62AC /* PayTableHeader.swift in Sources */,
+				A54681392A1B8DCC00AA0C63 /* CALayer.swift in Sources */,
+				A514D2A92A13A3E9000A62AC /* PayTableCell.swift in Sources */,
+				A514D2962A13A3E9000A62AC /* UITableViewCell.swift in Sources */,
+				A514D2952A13A3E9000A62AC /* UIView.swift in Sources */,
+				A514D2BD2A13A3E9000A62AC /* MenuButtons.swift in Sources */,
+				4B2A07F62A0E1E72007C24C8 /* Endpoint.swift in Sources */,
+				A514D2BC2A13A3E9000A62AC /* Menu.swift in Sources */,
+				4B2A07FE2A0E1E82007C24C8 /* x25519.c in Sources */,
+				4B2A07EF2A0E1E72007C24C8 /* InterfaceConfiguration.swift in Sources */,
+				A514D29C2A13A3E9000A62AC /* KeychainAccess.swift in Sources */,
+				A514D2AA2A13A3E9000A62AC /* PayTableFooter.swift in Sources */,
+				A514D2A82A13A3E9000A62AC /* PayTableCell2.swift in Sources */,
+				4B2A07CB2A0E1E52007C24C8 /* NETunnelProviderProtocol+Extension.swift in Sources */,
+				A5244F152A1F8B360023797C /* Theme.swift in Sources */,
+				A514D29E2A13A3E9000A62AC /* Reachability.swift in Sources */,
+				A514D2B42A13A3E9000A62AC /* Buttons.swift in Sources */,
+				A514D2A12A13A3E9000A62AC /* WebViewPresenter.swift in Sources */,
+				4B2A07EB2A0E1E72007C24C8 /* IPAddress+AddrInfo.swift in Sources */,
+				A514D2922A13A3E9000A62AC /* ActivityIndicator.swift in Sources */,
+				A514D2AC2A13A3E9000A62AC /* HomeViewController.swift in Sources */,
+				A514D2B32A13A3E9000A62AC /* PaymentAttempt.swift in Sources */,
+				A514D2B12A13A3E9000A62AC /* HomeView.swift in Sources */,
+				4B2A07C82A0E1E52007C24C8 /* test_ringlogger.c in Sources */,
+				A514D2982A13A3E9000A62AC /* UIActivityIndicatorView.swift in Sources */,
+				4B2A07C72A0E1E52007C24C8 /* Logger.swift in Sources */,
+				A514D2B52A13A3E9000A62AC /* ConnectAttempt.swift in Sources */,
+				4B2A07F52A0E1E72007C24C8 /* Array+ConcurrentMap.swift in Sources */,
+				4B2A07C52A0E1E52007C24C8 /* Keychain.swift in Sources */,
+				4B2A07DC2A0E1E63007C24C8 /* MockTunnels.swift in Sources */,
+				A5F32CCA2A30E082008B23DA /* String.swift in Sources */,
+				A514D2912A13A3E9000A62AC /* CustomIndicator.swift in Sources */,
+				A514D2932A13A3E9000A62AC /* CustomSwitch.swift in Sources */,
+				4B2A07F02A0E1E72007C24C8 /* IPAddressRange.swift in Sources */,
+				A514D2AD2A13A3E9000A62AC /* WebViewController.swift in Sources */,
+				4B2A07D92A0E1E63007C24C8 /* TunnelConfiguration+UapiConfig.swift in Sources */,
+				4B2A07EC2A0E1E72007C24C8 /* PacketTunnelSettingsGenerator.swift in Sources */,
+				4B2A07AA2A0E1E2B007C24C8 /* TunnelImporter.swift in Sources */,
+				4B2A07F42A0E1E72007C24C8 /* WireGuardAdapter.swift in Sources */,
+				4B2A07C42A0E1E52007C24C8 /* NotificationToken.swift in Sources */,
+				A5C9D7CE2A2392D800C6FAD8 /* UserNotifications.swift in Sources */,
+				A5244F172A1F8BD00023797C /* LightTheme.swift in Sources */,
+				A514D2A62A13A3E9000A62AC /* SettingsTableHeader.swift in Sources */,
+				4B2A07C62A0E1E52007C24C8 /* ringlogger.c in Sources */,
+				A54681332A1B8BCB00AA0C63 /* SplashScreenViewController.swift in Sources */,
+				A514D2A72A13A3E9000A62AC /* SettingsTableCell.swift in Sources */,
+				A58C5A872A16847B00189371 /* Date.swift in Sources */,
+				4B2A07CC2A0E1E52007C24C8 /* String+ArrayConversion.swift in Sources */,
+				4B2A07DB2A0E1E63007C24C8 /* TunnelErrors.swift in Sources */,
+				4B2A07DD2A0E1E63007C24C8 /* WireGuardAppError.swift in Sources */,
+				4B2A07FF2A0E1E82007C24C8 /* key.c in Sources */,
+				A514D2BB2A13A3E9000A62AC /* LoadAttempt.swift in Sources */,
+				4B2A080E2A0E1E91007C24C8 /* Makefile in Sources */,
+				4B2A07F22A0E1E72007C24C8 /* PeerConfiguration.swift in Sources */,
+				4B2A07ED2A0E1E72007C24C8 /* PrivateKey.swift in Sources */,
+				4B2A08202A0E1EAB007C24C8 /* ZipExporter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B2A08232A0E1F6F007C24C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B2A08572A0E2261007C24C8 /* TunnelConfiguration+WgQuickConfig.swift in Sources */,
+				4B2A08522A0E2244007C24C8 /* Array+ConcurrentMap.swift in Sources */,
+				4B2A085A2A0E2277007C24C8 /* ringlogger.c in Sources */,
+				4B2A084A2A0E2243007C24C8 /* PeerConfiguration.swift in Sources */,
+				4B2A08472A0E2139007C24C8 /* key.c in Sources */,
+				4B2A085B2A0E2286007C24C8 /* Keychain.swift in Sources */,
+				4B2A084E2A0E2243007C24C8 /* InterfaceConfiguration.swift in Sources */,
+				4B2A08582A0E2261007C24C8 /* String+ArrayConversion.swift in Sources */,
+				4B2A08552A0E2244007C24C8 /* PacketTunnelSettingsGenerator.swift in Sources */,
+				4B2A08542A0E2244007C24C8 /* DNSServer.swift in Sources */,
+				4B2A08502A0E2244007C24C8 /* WireGuardAdapter.swift in Sources */,
+				4B2A08532A0E2244007C24C8 /* IPAddressRange.swift in Sources */,
+				4B2A083E2A0E2121007C24C8 /* ErrorNotifier.swift in Sources */,
+				4B2A084D2A0E2243007C24C8 /* DNSResolver.swift in Sources */,
+				4B2A08562A0E2261007C24C8 /* NETunnelProviderProtocol+Extension.swift in Sources */,
+				4B2A082D2A0E1F6F007C24C8 /* PacketTunnelProvider.swift in Sources */,
+				4B2A085C2A0E2286007C24C8 /* FileManager+Extension.swift in Sources */,
+				4B2A084F2A0E2244007C24C8 /* TunnelConfiguration.swift in Sources */,
+				4B2A08592A0E2266007C24C8 /* Logger.swift in Sources */,
+				4B2A08482A0E2139007C24C8 /* x25519.c in Sources */,
+				4B2A084C2A0E2243007C24C8 /* IPAddress+AddrInfo.swift in Sources */,
+				4B2A08512A0E2244007C24C8 /* Endpoint.swift in Sources */,
+				4B2A084B2A0E2243007C24C8 /* PrivateKey.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4B2A08312A0E1F6F007C24C8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4B2A08262A0E1F6F007C24C8 /* WireguardNetworkExtension */;
+			targetProxy = 4B2A08302A0E1F6F007C24C8 /* PBXContainerItemProxy */;
+		};
+		4B2A083C2A0E1FF9007C24C8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4B2A08372A0E1FA3007C24C8 /* WireguardGoBridgeiOS */;
+			targetProxy = 4B2A083B2A0E1FF9007C24C8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4B2A07942A0E1BF3007C24C8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4B2A07952A0E1BF3007C24C8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4B2A07992A0E1BF4007C24C8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4B2A079A2A0E1BF4007C24C8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		A514D2CE2A13AA83000A62AC /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A514D2CD2A13AA83000A62AC /* en */,
+				A514D2CF2A13AA99000A62AC /* ru */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4B2A079D2A0E1BF4007C24C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4B2A079E2A0E1BF4007C24C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4B2A07A02A0E1BF4007C24C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57503CC894A1B7FE5D0A0308 /* Pods-WireguardApp.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = WireguardApp/WireguardApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 19;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 4846YS2SRY;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Firebase\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseCore\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseCoreInternal\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseInstallations\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseMessaging\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleDataTransport\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleUtilities\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/PromisesObjC\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Toast-Swift\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/nanopb\"",
+					"\"${PODS_ROOT}/FirebaseAnalytics/Frameworks\"",
+					"\"${PODS_ROOT}/GoogleAppMeasurement/Frameworks\"",
+					"\"${PODS_XCFRAMEWORKS_BUILD_DIR}/FirebaseAnalytics/AdIdSupport\"",
+					"\"${PODS_XCFRAMEWORKS_BUILD_DIR}/GoogleAppMeasurement/AdIdSupport\"",
+					"\"${PODS_XCFRAMEWORKS_BUILD_DIR}/GoogleAppMeasurement/WithoutAdIdSupport\"",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/WireguardApp/LibraryClasses/Wireguard/WireGuardKitGo\"",
+					"\"$(SRCROOT)/WireguardApp/LibraryClasses/Wireguard/WireGuardKitC\"",
+				);
+				INFOPLIST_FILE = WireguardApp/Resources/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = InConnect;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WireguardApp/LibraryClasses/Wireguard",
+				);
+				MARKETING_VERSION = 1.0;
+				PATH = "${PATH}:/opt/homebrew/opt/go@1.19/bin";
+				PRODUCT_BUNDLE_IDENTIFIER = ru.ntens.connect;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "WireguardApp/WireguardApp-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4B2A07A12A0E1BF4007C24C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B729CBBB396A095D0E499823 /* Pods-WireguardApp.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = WireguardApp/WireguardApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 19;
+				DEVELOPMENT_TEAM = 4846YS2SRY;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Firebase\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseCore\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseCoreInternal\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseInstallations\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseMessaging\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleDataTransport\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleUtilities\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/PromisesObjC\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Toast-Swift\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/nanopb\"",
+					"\"${PODS_ROOT}/FirebaseAnalytics/Frameworks\"",
+					"\"${PODS_ROOT}/GoogleAppMeasurement/Frameworks\"",
+					"\"${PODS_XCFRAMEWORKS_BUILD_DIR}/FirebaseAnalytics/AdIdSupport\"",
+					"\"${PODS_XCFRAMEWORKS_BUILD_DIR}/GoogleAppMeasurement/AdIdSupport\"",
+					"\"${PODS_XCFRAMEWORKS_BUILD_DIR}/GoogleAppMeasurement/WithoutAdIdSupport\"",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/WireguardApp/LibraryClasses/Wireguard/WireGuardKitGo\"",
+					"\"$(SRCROOT)/WireguardApp/LibraryClasses/Wireguard/WireGuardKitC\"",
+				);
+				INFOPLIST_FILE = WireguardApp/Resources/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = InConnect;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WireguardApp/LibraryClasses/Wireguard",
+				);
+				MARKETING_VERSION = 1.0;
+				PATH = "${PATH}:/opt/homebrew/opt/go@1.19/bin";
+				PRODUCT_BUNDLE_IDENTIFIER = ru.ntens.connect;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "WireguardApp/WireguardApp-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4B2A08342A0E1F6F007C24C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13862F24E0D484AFDD6DE195 /* Pods-WireguardNetworkExtension.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = WireguardNetworkExtension/WireguardNetworkExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4846YS2SRY;
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/WireguardApp/LibraryClasses/Wireguard/WireGuardKitGo\"",
+					"\"$(SRCROOT)/WireguardApp/LibraryClasses/Wireguard/WireGuardKitC\"",
+				);
+				INFOPLIST_FILE = WireguardNetworkExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = WireguardNetworkExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WireguardApp/LibraryClasses/Wireguard",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ru.ntens.connect.network-extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "WireguardNetworkExtension/WireguardNetworkExtension-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		4B2A08352A0E1F6F007C24C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48E2F2B704A8700E36BD1ADF /* Pods-WireguardNetworkExtension.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = WireguardNetworkExtension/WireguardNetworkExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4846YS2SRY;
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/WireguardApp/LibraryClasses/Wireguard/WireGuardKitGo\"",
+					"\"$(SRCROOT)/WireguardApp/LibraryClasses/Wireguard/WireGuardKitC\"",
+				);
+				INFOPLIST_FILE = WireguardNetworkExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = WireguardNetworkExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WireguardApp/LibraryClasses/Wireguard",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ru.ntens.connect.network-extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "WireguardNetworkExtension/WireguardNetworkExtension-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		4B2A08392A0E1FA3007C24C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEBUGGING_SYMBOLS = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 6N43GY3295;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PATH = "${PATH}:/opt/homebrew/opt/go@1.20/bin";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/rahulchopra/Desktop/WireguardApp/WireguardApp/WireguardApp-Bridging-Header.h";
+			};
+			name = Debug;
+		};
+		4B2A083A2A0E1FA3007C24C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 6N43GY3295;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PATH = "${PATH}:/opt/homebrew/opt/go@1.20/bin";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/rahulchopra/Desktop/WireguardApp/WireguardApp/WireguardApp-Bridging-Header.h";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4B2A07862A0E1BF3007C24C8 /* Build configuration list for PBXProject "WireguardApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B2A079D2A0E1BF4007C24C8 /* Debug */,
+				4B2A079E2A0E1BF4007C24C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4B2A079F2A0E1BF4007C24C8 /* Build configuration list for PBXNativeTarget "WireguardApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B2A07A02A0E1BF4007C24C8 /* Debug */,
+				4B2A07A12A0E1BF4007C24C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4B2A08332A0E1F6F007C24C8 /* Build configuration list for PBXNativeTarget "WireguardNetworkExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B2A08342A0E1F6F007C24C8 /* Debug */,
+				4B2A08352A0E1F6F007C24C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4B2A08382A0E1FA3007C24C8 /* Build configuration list for PBXLegacyTarget "WireguardGoBridgeiOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B2A08392A0E1FA3007C24C8 /* Debug */,
+				4B2A083A2A0E1FA3007C24C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4B2A07832A0E1BF3007C24C8 /* Project object */;
+}

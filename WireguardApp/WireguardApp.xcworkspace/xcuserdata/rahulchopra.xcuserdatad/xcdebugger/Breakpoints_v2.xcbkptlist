@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "92743D20-7E34-4AED-B2BA-78927EC153B2"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "81303030-AA7A-46A5-96B0-533F4C01026B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WireguardApp/Tunnel+Extension.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
+            landmarkName = "generateProviderConfiguration()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D9C9B4D3-35CE-4455-8B46-E5D50A88D1B0"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WireguardApp/TunnelManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "87"
+            endingLineNumber = "87"
+            landmarkName = "connect(completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "D9C9B4D3-35CE-4455-8B46-E5D50A88D1B0 - 52ef99eb0e604a82"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "WireguardApp.TunnelManager.connect(completion: (Swift.Result&lt;Swift.Bool, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "WireguardApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rahulchopra/Desktop/WireguardApp/WireguardApp/TunnelManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "87"
+                  endingLineNumber = "87"
+                  offsetFromSymbolStart = "280">
+               </Location>
+               <Location
+                  uuid = "D9C9B4D3-35CE-4455-8B46-E5D50A88D1B0 - e5c6fc689add848b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in WireguardApp.TunnelManager.connect(completion: (Swift.Result&lt;Swift.Bool, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "WireguardApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rahulchopra/Desktop/WireguardApp/WireguardApp/TunnelManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "88"
+                  endingLineNumber = "88"
+                  offsetFromSymbolStart = "152">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "825BEDBE-E4C2-4AA8-951E-061CA85C9FBC"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WireguardApp/LibraryClasses/Wireguard/WireGuardKit/PacketTunnelSettingsGenerator.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
+            landmarkName = "uapiConfiguration()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "825BEDBE-E4C2-4AA8-951E-061CA85C9FBC - 1fda655b70ebd706"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "WireguardApp.PacketTunnelSettingsGenerator.uapiConfiguration() -&gt; (Swift.String, Swift.Array&lt;Swift.Optional&lt;Swift.Result&lt;(WireguardApp.Endpoint, WireguardApp.Endpoint), WireguardApp.DNSResolutionError&gt;&gt;&gt;)"
+                  moduleName = "WireguardApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rahulchopra/Documents/WireguardApp/WireguardApp/LibraryClasses/Wireguard/WireGuardKit/PacketTunnelSettingsGenerator.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "1296">
+               </Location>
+               <Location
+                  uuid = "825BEDBE-E4C2-4AA8-951E-061CA85C9FBC - 1fda655b70ebd706"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "WireguardApp.PacketTunnelSettingsGenerator.uapiConfiguration() -&gt; (Swift.String, Swift.Array&lt;Swift.Optional&lt;Swift.Result&lt;(WireguardApp.Endpoint, WireguardApp.Endpoint), WireguardApp.DNSResolutionError&gt;&gt;&gt;)"
+                  moduleName = "WireguardApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rahulchopra/Documents/WireguardApp/WireguardApp/LibraryClasses/Wireguard/WireGuardKit/PacketTunnelSettingsGenerator.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "1392">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "959C8817-EC8E-42A7-A3F8-262CDFCB87A6"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WireguardApp/Tunnel+Extension.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "generateProviderConfiguration()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "959C8817-EC8E-42A7-A3F8-262CDFCB87A6 - e75358174677bcdf"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "WireguardApp.Tunnel.generateProviderConfiguration() -&gt; Swift.Dictionary&lt;Swift.String, Any&gt;"
+                  moduleName = "WireguardApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rahulchopra/Desktop/WireguardApp/WireguardApp/Tunnel+Extension.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "1844">
+               </Location>
+               <Location
+                  uuid = "959C8817-EC8E-42A7-A3F8-262CDFCB87A6 - e75358174677bcdf"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "WireguardApp.Tunnel.generateProviderConfiguration() -&gt; Swift.Dictionary&lt;Swift.String, Any&gt;"
+                  moduleName = "WireguardApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rahulchopra/Desktop/WireguardApp/WireguardApp/Tunnel+Extension.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "1896">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "52F0F0B3-D810-4E2F-8054-7DAF979A074E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WireguardApp/Tunnel+Extension.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
+            landmarkName = "generateInterfaceProviderConfiguration(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "52F0F0B3-D810-4E2F-8054-7DAF979A074E - 76b3ebb98af078b8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "WireguardApp.Tunnel.generateInterfaceProviderConfiguration(WireguardApp.Tunnel.Interface) -&gt; Swift.String"
+                  moduleName = "WireguardApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rahulchopra/Desktop/WireguardApp/WireguardApp/Tunnel+Extension.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "53"
+                  endingLineNumber = "53"
+                  offsetFromSymbolStart = "116">
+               </Location>
+               <Location
+                  uuid = "52F0F0B3-D810-4E2F-8054-7DAF979A074E - 76b3ebb98af078b8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "WireguardApp.Tunnel.generateInterfaceProviderConfiguration(WireguardApp.Tunnel.Interface) -&gt; Swift.String"
+                  moduleName = "WireguardApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rahulchopra/Desktop/WireguardApp/WireguardApp/Tunnel+Extension.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "53"
+                  endingLineNumber = "53"
+                  offsetFromSymbolStart = "200">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "289D70D1-C43C-4380-AD2C-5321F4CD6445"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WireguardApp/Tunnel+Extension.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "generateProviderConfiguration()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "289D70D1-C43C-4380-AD2C-5321F4CD6445 - e75358174677bf5b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "WireguardApp.Tunnel.generateProviderConfiguration() -&gt; Swift.Dictionary&lt;Swift.String, Any&gt;"
+                  moduleName = "WireguardApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rahulchopra/Desktop/WireguardApp/WireguardApp/Tunnel+Extension.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38"
+                  offsetFromSymbolStart = "2008">
+               </Location>
+               <Location
+                  uuid = "289D70D1-C43C-4380-AD2C-5321F4CD6445 - e75358174677bf5b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "WireguardApp.Tunnel.generateProviderConfiguration() -&gt; Swift.Dictionary&lt;Swift.String, Any&gt;"
+                  moduleName = "WireguardApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rahulchopra/Desktop/WireguardApp/WireguardApp/Tunnel+Extension.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38"
+                  offsetFromSymbolStart = "2240">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E3768ED2-7023-4BCD-A58A-24B2BA6B832E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WireguardApp/Tunnel+Extension.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "69"
+            endingLineNumber = "69"
+            landmarkName = "generatePeerProviderConfiguration(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "E3768ED2-7023-4BCD-A58A-24B2BA6B832E - 66ccfb1474b44ec7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "WireguardApp.Tunnel.generatePeerProviderConfiguration(WireguardApp.Tunnel.Peer) -&gt; Swift.String"
+                  moduleName = "WireguardApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rahulchopra/Desktop/WireguardApp/WireguardApp/Tunnel+Extension.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "69"
+                  endingLineNumber = "69"
+                  offsetFromSymbolStart = "180">
+               </Location>
+               <Location
+                  uuid = "E3768ED2-7023-4BCD-A58A-24B2BA6B832E - 66ccfb1474b44ec7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "WireguardApp.Tunnel.generatePeerProviderConfiguration(WireguardApp.Tunnel.Peer) -&gt; Swift.String"
+                  moduleName = "WireguardApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rahulchopra/Desktop/WireguardApp/WireguardApp/Tunnel+Extension.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "69"
+                  endingLineNumber = "69"
+                  offsetFromSymbolStart = "264">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2809D09E-1DCE-49E5-A14C-5D65465A85D7"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WireguardApp/LibraryClasses/Wireguard/Tunnel/TunnelsManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "818"
+            endingLineNumber = "818"
+            landmarkName = "startActivation(recursionCount:lastError:activationDelegate:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EBFABE30-48F8-4F47-A3A8-08C8E7464C49"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WireguardNetworkExtension/PacketTunnelProvider.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "startTunnel(options:completionHandler:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4B3AC096-17B8-4058-AAF7-888465576C78"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WireguardNetworkExtension/PacketTunnelProvider.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "startTunnel(options:completionHandler:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

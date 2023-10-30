@@ -1,0 +1,55 @@
+/* 
+  Localizable.strings
+  WireguardApp
+
+  Created by Сергей on 16.05.2023.
+  
+*/
+
+"CONNECTED" = "Connected";
+"DISABLED" = "Disconnected";
+"CONNECTION" = "Connecting";
+"DISABLING" = "Turning Off";
+"SETTINGS" = "Settings";
+"DONE" = "Done";
+"TO_PAY_SUBSCRIPTION" = "Pay now";
+"SUBSCRIPTION_DAYS" = "of subscription left";
+"ACTIVATE_SUBSCRIPTION" = "To use the service, activate your subscription";
+"SUBSCRIPTION_EMDED" = "Subscription ended";
+"PERIOD_EXPIRED" = "Paid period has expired";
+"PAY_SUBSCRIPTION" = "Pay for a subscription";
+"RATE" = "Offer";
+"END_DATE" = "Expiration date";
+"HELP" = "Help";
+"HELP_CENTER" = "FAQ";
+"WRITE_SUPPORT" = "Support";
+"ID_USER" = "User ID";
+"VERSION_APP" = "App version";
+"SERVICE" = "Service";
+"RATES" = "Offers";
+"PAYMENT" = "Payment";
+"PAY" = "Pay";
+"PAYMENT_METHOD" = "Payment method";
+"BANK_CARD" = "Card";
+"LINK_CARD" = "Save card";
+"RUB" = "RUB";
+"CLOSE" = "Close";
+"ERROR" = "Error";
+"MESSAGE" = "Message";
+"NO_INTERNET" = "The Internet connection is probably interrupted.\n Try again later";
+"NO_RESPONSE_REMOTE_SERVICE" = "There is no response from the remote service.\n Try again later";
+"OK" = "OK";
+"LINKING_CARD" = "Paying, you";
+"AGREE_TERMS" = "agree to the terms";
+"BACK" = "Back";
+"COPY_CLIPBOARD" = "Copied to Clipboard";
+"COME_PROBLEM" = "There is a problem! We are solving it! Try again later";
+"INFO_CARD" = "Choosing «Save card», you confirm the reading of the rules on automatic payments and auto-renewal of the subscription";
+"AUTOMATIC_CANCELLATION" = "automatic payments";
+"INFO_PAY" = "By clicking «Pay», you confirm your consent to the processing of personal data and agree to the offer agreement";
+"PERSONAL_DATA" = "the processing of personal data";
+"PUBLIC_OFFER" = "the offer agreement";
+"DAY" = "day";
+"DAYS1" = "days";
+"DAYS2" = "days";
+"SUBSCRIPTION" = "Subscribe";
